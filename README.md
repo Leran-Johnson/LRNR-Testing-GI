@@ -67,7 +67,7 @@ LRNR is a cutting-edge application powered by React, Node.js, and the OpenAI API
    ```
 4. **Install Required npm Packages**:
    ```bash
-   npm install express openai cors axios
+   npm install express openai cors axios jest supertest cypress
    ```
 
 ### Frontend Installation:
@@ -144,6 +144,26 @@ LRNR is a cutting-edge application powered by React, Node.js, and the OpenAI API
    - After answering all questions, a "Results" button will appear.
    - Click it to access a comprehensive overview of the quiz along with your answers.
 
+### Testing
+
+**End 2 End Test**
+   - To Run Cypress and test the Front End
+   - Ensure you are running the front end and the backend (refer to Usage for how to do so!)
+   - Laucnh Cypress 
+
+   ```bash
+   npm run cy:open
+   ```
+   - Navigate to E2E Testing and choose preffered testing source (I recommend Chrome)
+   - Select the spec.cy.js file and run the test
+
+**Unit Testing**
+   - To launch jest and run unit test on backend routes
+   - Ensure the backend (server.js) is not currently running
+
+   ```bash
+   npm run test:jest
+   ```
 
 
 ## Learn More
